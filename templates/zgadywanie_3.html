@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Gra w zgadywanki :)</title>
+    </head>
+    <body>
+        <H1> Hello Player :) </H1>
+        <H2> Imagine a number from 1 to 1000! </H2>
+        <H3> Give hints: too big, too small, win. </H3>
+        <h1></h1>
+        <h1> Computer guessed: 500 </h1>  <!-- chciałam tu uniknąć podawania słowa 500 i dałam <h1> Computer guessed: {{ computer_guess }} </h1>, ale nie działało -->
+        <form method="POST">
+            <input type="submit" value="too small" />
+            <input type="submit" value="too big" />
+            <input type="submit" value="win" />
+            <input type="hidden" name="min" value="{}"/>
+            <input type="hidden" name="max" value="{}"/>
+        </form>
+    </body>
+</html>
